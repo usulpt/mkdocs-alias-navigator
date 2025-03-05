@@ -1,0 +1,56 @@
+{
+  "name": "mkdocs-alias-navigator",
+  "displayName": "MkDocs Alias Navigator",
+  "description": "Navigate MkDocs alias links in VS Code.",
+  "version": "0.0.1",
+  "publisher": "usulpt",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.navigateAlias",
+        "title": "Navigate Alias"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.navigateAlias",
+        "key": "ctrl+alt+n",
+        "when": "editorTextFocus && editorLangId == markdown"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Alias Navigation Configuration",
+      "properties": {
+        "aliasNavigation.folder": {
+          "type": "string",
+          "default": "docs",
+          "description": "The folder to search for Markdown files with aliases."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.8.2",
+    "vscode-test": "^1.4.0"
+  },
+  "dependencies": {
+    "front-matter": "^4.0.2"
+  }
+}
