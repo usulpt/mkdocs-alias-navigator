@@ -3,10 +3,11 @@
   "displayName": "MkDocs Alias Navigator",
   "description": "Navigate MkDocs alias links in VS Code.",
   "version": "0.0.1",
-  "publisher": "usulpt",
+  "publisher": "JorgeBertocchini",
   "repository": {
     "url": "https://github.com/usulpt/mkdocs-alias-navigator"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.75.0"
   },
