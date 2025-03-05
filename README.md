@@ -1,6 +1,6 @@
 # MkDocs Alias Navigator
 
-This VS Code extension allows you to navigate MkDocs alias links, complementing the great work by `https://github.com/EddyLuten/mkdocs-alias-plugin`.
+This VS Code extension allows you to navigate MkDocs alias links, complementing the great work by <https://github.com/EddyLuten/mkdocs-alias-plugin>.
 
 ## Features
 
